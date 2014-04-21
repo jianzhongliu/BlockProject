@@ -19,6 +19,9 @@
 		E4AAD26818E5A803000CB6B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4AAD25018E5A803000CB6B2 /* UIKit.framework */; };
 		E4AAD27018E5A803000CB6B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4AAD26E18E5A803000CB6B2 /* InfoPlist.strings */; };
 		E4AAD27218E5A803000CB6B2 /* BlockProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AAD27118E5A803000CB6B2 /* BlockProjectTests.m */; };
+		E4AAD27D18E5A818000CB6B2 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AAD27C18E5A818000CB6B2 /* RootViewController.m */; };
+		E4AAD28118E5A836000CB6B2 /* BlockManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AAD28018E5A836000CB6B2 /* BlockManager.m */; };
+		E4AAD28618E5D4AB000CB6B2 /* ReamMe in Resources */ = {isa = PBXBuildFile; fileRef = E4AAD28518E5D4AB000CB6B2 /* ReamMe */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,11 @@
 		E4AAD26D18E5A803000CB6B2 /* BlockProjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlockProjectTests-Info.plist"; sourceTree = "<group>"; };
 		E4AAD26F18E5A803000CB6B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E4AAD27118E5A803000CB6B2 /* BlockProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockProjectTests.m; sourceTree = "<group>"; };
+		E4AAD27B18E5A818000CB6B2 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		E4AAD27C18E5A818000CB6B2 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		E4AAD27F18E5A836000CB6B2 /* BlockManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockManager.h; sourceTree = "<group>"; };
+		E4AAD28018E5A836000CB6B2 /* BlockManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockManager.m; sourceTree = "<group>"; };
+		E4AAD28518E5D4AB000CB6B2 /* ReamMe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReamMe; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,7 @@
 		E4AAD24018E5A803000CB6B2 = {
 			isa = PBXGroup;
 			children = (
+				E4AAD28518E5D4AB000CB6B2 /* ReamMe */,
 				E4AAD25218E5A803000CB6B2 /* BlockProject */,
 				E4AAD26B18E5A803000CB6B2 /* BlockProjectTests */,
 				E4AAD24B18E5A803000CB6B2 /* Frameworks */,
@@ -107,10 +116,13 @@
 		E4AAD25218E5A803000CB6B2 /* BlockProject */ = {
 			isa = PBXGroup;
 			children = (
+				E4AAD27E18E5A81D000CB6B2 /* Manager */,
 				E4AAD25B18E5A803000CB6B2 /* AppDelegate.h */,
 				E4AAD25C18E5A803000CB6B2 /* AppDelegate.m */,
 				E4AAD25E18E5A803000CB6B2 /* Images.xcassets */,
 				E4AAD25318E5A803000CB6B2 /* Supporting Files */,
+				E4AAD27B18E5A818000CB6B2 /* RootViewController.h */,
+				E4AAD27C18E5A818000CB6B2 /* RootViewController.m */,
 			);
 			path = BlockProject;
 			sourceTree = "<group>";
@@ -142,6 +154,15 @@
 				E4AAD26E18E5A803000CB6B2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4AAD27E18E5A81D000CB6B2 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E4AAD27F18E5A836000CB6B2 /* BlockManager.h */,
+				E4AAD28018E5A836000CB6B2 /* BlockManager.m */,
+			);
+			name = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +242,7 @@
 			files = (
 				E4AAD25718E5A803000CB6B2 /* InfoPlist.strings in Resources */,
 				E4AAD25F18E5A803000CB6B2 /* Images.xcassets in Resources */,
+				E4AAD28618E5D4AB000CB6B2 /* ReamMe in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +263,8 @@
 			files = (
 				E4AAD25D18E5A803000CB6B2 /* AppDelegate.m in Sources */,
 				E4AAD25918E5A803000CB6B2 /* main.m in Sources */,
+				E4AAD27D18E5A818000CB6B2 /* RootViewController.m in Sources */,
+				E4AAD28118E5A836000CB6B2 /* BlockManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

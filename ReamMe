@@ -1,0 +1,21 @@
+block的定义：
+   int multiplier = 7;
+    int (^myBlock)(int num) = ^(int num) {return num * multiplier;};
+    printf("----%d", myBlock(3));
+
+block作为方法的参数
+    [[AXChatMessageCenter defaultMessageCenter] sendMessageToPublic:mappedMessage willSendMessage:self.finishSendMessageBlock];
+
+
+
+block作为参数传递到方法体
+    - (void)testMethod:(NSString *)imgPath finishBlock:(void (^)(NSString *)) serchBlock {
+
+    }
+
+申明block变量或属性
+    @property (nonatomic, strong) void (^finishSendMessageBlock)(AXMappedMessage *message,AXMessageCenterSendMessageStatus status,AXMessageCenterSendMessageErrorTypeCode errorCode);
+
+
+多次返回block值
+    这个demo中的timer就是实现这个功能，每次执行self.block都会在方法的block回调里面执行一次；
