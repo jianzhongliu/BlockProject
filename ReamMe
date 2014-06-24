@@ -20,6 +20,5 @@ block作为参数传递到方法体
 多次返回block值
     这个demo中的timer就是实现这个功能，每次执行self.block都会在方法的block回调里面执行一次；
     
-    
-    github的安装
+github的安装
 http://blog.csdn.net/binyao02123202/article/details/17577121
