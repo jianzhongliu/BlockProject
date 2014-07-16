@@ -18,4 +18,5 @@
 + (instancetype)defaultObject;
 //- (void)testMethod;
 - (void)testMethod:(NSString *)imgPath finishBlock:(void (^)(NSString *)) serchBlock;
++(void)perform:(void(^)())block1 withCompletionHandler:(void (^)())block2;
 @end
