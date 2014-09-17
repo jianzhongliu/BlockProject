@@ -21,4 +21,5 @@
 - (void)testMethod:(NSString *)imgPath finishBlock:(void (^)(NSString *)) serchBlock;
 //不带参数的
 - (void)testMethod:(NSString *)imgPath compliteBlock:(void (^)(void)) serchBlock;
++(void)perform:(void(^)())block1 withCompletionHandler:(void (^)())block2;
 @end

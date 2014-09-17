@@ -29,9 +29,18 @@
     if (serchBlock) {
         serchBlock();
     }
++(void)perform:(void(^)())block1 withCompletionHandler:(void (^)())block2
+{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        block1();
+        dispatch_async(dispatch_get_main_queue(),^{
+            block2();
+        });
+    });
 }
 - (void)threadMethod {
     _serchBlock(@"zhongguo");
 }
+
 //- (void)searchBrokerByBrokerPhone:(NSString *)brokerPhone compeletionBlock:(void (^)(AXMappedPerson *))searchBrokerBlock
 @end

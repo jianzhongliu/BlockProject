@@ -30,6 +30,12 @@
 {
     [super viewDidLoad];
     [self initBlock];
+//block参数的第二种方式
+    [BlockManager perform:^{
+        NSLog(@"===");
+    } withCompletionHandler:^{
+        NSLog(@"----");
+    }];
 }
 
 - (void)initBlock {
