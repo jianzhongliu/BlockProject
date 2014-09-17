@@ -24,6 +24,12 @@
     _serchBlock = serchBlock;
     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2.0f target:self selector:@selector(threadMethod) userInfo:nil repeats:YES];
 }
+
+- (void)testMethod:(NSString *)imgPath compliteBlock:(void (^)(void)) serchBlock {
+    if (serchBlock) {
+        serchBlock();
+    }
+}
 - (void)threadMethod {
     _serchBlock(@"zhongguo");
 }

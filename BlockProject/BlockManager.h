@@ -17,5 +17,8 @@
 //@property (nonatomic, strong) ;
 + (instancetype)defaultObject;
 //- (void)testMethod;
+//带参数的
 - (void)testMethod:(NSString *)imgPath finishBlock:(void (^)(NSString *)) serchBlock;
+//不带参数的
+- (void)testMethod:(NSString *)imgPath compliteBlock:(void (^)(void)) serchBlock;
 @end
